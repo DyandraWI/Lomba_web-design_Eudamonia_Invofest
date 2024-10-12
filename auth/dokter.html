@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi | Ayo Cerita!</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/icon/logo2.png" type="image/x-icon">
+</head>
+<body style="background-color: #0f0f10;">
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top px-3" style="font-family: 'poppins'; background-color: #000000;">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img src="../assets/icon/logo.png" alt="..." style="width: 150px;">
+            </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="col d-flex">
+                <ul class="navbar-nav mx-auto gap-4 mt-2 mt-lg-0 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-current="page">Beranda<span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#layanan">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tentangKami">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#artikel">Artikel</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex my-2 my-lg-0">
+                <a href="../login.html" class="btn btn-outline-danger my-2 my-sm-0 px-4 fw-semibold" onclick="logout()">Keluar</a>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- content start -->
+    <div class="container">
+        <div class="row d-flex flex-column">
+            <div class="col d-flex justify-content-center mt-4" style="font-family: 'poppins'; color: #ffffff;">
+                <h1 class="fw-bold">Selamat Datang,</h1>
+                <h1 class="fw-bold ms-3" id="user"></h1>
+                <h1 class="fw-bold">!</h1>
+            </div>
+            <div class="col">
+                <p style="color: #ffffff;" class="text-center fw-semibold mb-4">Kami di sini untuk membantu Anda. Berikut adalah beberapa rekomendasi terapis yang mungkin cocok untuk Anda.</p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col d-flex justify-content-center gap-4">
+                <div class="row">
+                    <div class="col-md-4 col-sm-5 my-1">
+                        <a href="booking.html" class="text-decoration-none">
+                            <div class="card" style="border-radius: 30px;">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                    <img src="../assets/img/doctor1.png" alt="..." class="img-fluid my-2" style="width: 150px;">
+                                    <h4 class="card-title fw-bold text-black mb-2">Dr. Demian</h4>
+                                    <img src="../assets/icon/stars.png" alt="...">
+                                </div>
+                                <div style="background-color: #FFF640; border-radius: 30px;" class="mx-0 px-3 py-3">
+                                    <p class="card-text text-black">Dr. Demian adalah seorang psikiater yang berpengalaman dalam mengatasi kecemasan dan depresi. Beliau siap membantu Anda menemukan jalan keluar dari perasaan yang sulit.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-5 my-1">
+                        <a href="booking.html" class="text-decoration-none">
+                            <div class="card" style="border-radius: 30px;">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                    <img src="../assets/img/doctor2.png" alt="..." class="img-fluid my-2" style="width: 150px;">
+                                    <h4 class="card-title fw-bold text-black mb-2">Dr. Abdullah</h4>
+                                    <img src="../assets/icon/stars.png" alt="...">
+                                </div>
+                                <div style="background-color: #FFF640; border-radius: 30px;" class="mx-0 px-3 py-3">
+                                    <p class="card-text text-black">Dr. Abdullah adalah seorang psikiater yang berpengalaman dalam mengatasi kecemasan dan depresi. Beliau siap membantu Anda menemukan jalan keluar dari perasaan yang sulit.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-5 my-1">
+                        <a href="booking.html" class="text-decoration-none">
+                            <div class="card" style="border-radius: 30px;">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                    <img src="../assets/img/doctor3.png" alt="..." class="img-fluid my-2" style="width: 150px;">
+                                    <h4 class="card-title fw-bold text-black mb-2">Dr. Enenk</h4>
+                                    <img src="../assets/icon/stars.png" alt="...">
+                                </div>
+                                <div style="background-color: #FFF640; border-radius: 30px;" class="mx-0 px-3 py-3">
+                                    <p class="card-text text-black">Dr. Enenk adalah seorang terapis keluarga dengan fokus pada perbaikan hubungan. Beliau membantu pasangan dan keluarga mengatasi konflik dan mencapai kesejahteraan bersama.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content end -->
+
+    <!-- footer start -->
+    <footer id="kontak" style="background-color: #F7F059;">
+        <div class="container">
+            <div class="row d-flex justify-content-center py-5">
+                <div class="col-md-3 col-sm-5 d-flex flex-column align-items-center">
+                    <img src="../assets/icon/logo3.png" alt="..." style="width: 100px;">
+                    <img src="../assets/icon/ayoCerita.png" alt="..." style="width: 200px;">
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Navigasi</h4>
+                    <a href="index.html" class="text-decoration-none text-black">
+                        <p>Halaman Utama</p>
+                    </a>
+                    <p>Layanan</p>
+                    <p>Sumber Informasi</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Tentang</h4>
+                    <p>Email</p>
+                    <p>Alamat</p>
+                    <p>Nomor Telepon</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Kontak</h4>
+                    <p>Karir</p>
+                    <p>Kebijakan Privasi</p>
+                    <p>Sumber Informasi</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3 d-flex flex-column align-items-center">
+                    <img src="../assets/icon/linkedIn.png" alt="..." style="width: 30px;" class="mt-1 mb-3">
+                    <img src="../assets/icon/ig.png" alt="..." style="width: 30px;" class="mb-3">
+                    <img src="../assets/icon/yt.png" alt="..." style="width: 30px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center text-dark">Hak Cipta &copy; 2023 Copyright Ayo Cerita!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script>
+        let user = document.getElementById('user')
+
+        user.innerHTML = localStorage.getItem('username')
+    </script>
+</body>
+</html>

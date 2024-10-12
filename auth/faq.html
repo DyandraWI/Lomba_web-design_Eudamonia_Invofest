@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/icon/logo2.png" type="image/x-icon">
+    <title>FAQ | Ayo Cerita!</title>
+</head>
+<body style="background-color: #0f0f10;">
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top px-3" style="font-family: 'poppins'; background-color: #000000;">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img src="../assets/icon/logo.png" alt="..." style="width: 150px;">
+            </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="col d-flex">
+                <ul class="navbar-nav mx-auto gap-4 mt-2 mt-lg-0 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-current="page">Beranda<span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#layanan">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tentangKami">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#artikel">Artikel</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex my-2 my-lg-0">
+                <a href="../login.html" class="btn btn-outline-danger my-2 my-sm-0 px-4 fw-semibold" onclick="logout()">Keluar</a>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- content start -->
+    <section>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <h1 class="fw-bold text-center" style="color: #fff640;">Box Pertanyaan</h1>
+                </div>
+                <div class="col-md-8 pt-4">
+                    <div class="accordion border-0" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item border-start-0 border-end-0" style="background-color: #0f0f10;">
+                          <h2 class="accordion-header" style="background-color: #0f0f10;">
+                            <button class="accordion-button d-flex justify-content-center align-items-center" type="button" onclick="plusminus1()" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color: #0f0f10;">
+                              <img src="../assets/icon/minus.png" alt="..." style="width: 20px;" id="accordion-img1" class="mb-0">
+                              <p style="color: #ffffff;" class="fw-semibold ms-3 mb-1">ADHD ada obatnya gak sih?</p>
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p class="text-white">Hai user, pengidap ADHD biasanya akan diberi obat methylphenidate  tetapi untuk ADHD lebih baik pengobatannya dengan cara terapi sosial.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0" style="background-color: #0f0f10;">
+                          <h2 class="accordion-header" style="background-color: #0f0f10;">
+                            <button class="accordion-button collapsed" type="button" onclick="plusminus2()" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="background-color: #0f0f10;">
+                              <img src="../assets/icon/plus.png" alt="..." style="width: 20px;" id="accordion-img2" class="mb-0">
+                              <p style="color: #ffffff;" class="fw-semibold ms-3 mb-1">Gimana sih cara mengatasi anxiety?</p>
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <p class="text-white">Hai user, cara menangani anxiety adalah dengan mencoba mengambil nafas dalam dalam, lalu memfokuskan pikiran pada aktivitas yang akan/sedang dijalani.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0" style="background-color: #0f0f10;">
+                          <h2 class="accordion-header" style="background-color: #0f0f10;">
+                            <button class="accordion-button collapsed" type="button" onclick="plusminus3()" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="background-color: #0f0f10;">
+                              <img src="../assets/icon/plus.png" alt="..." style="width: 20px;" id="accordion-img3" class="mb-0">
+                              <p style="color: #ffffff;" class="fw-semibold ms-3 mb-1">Kenapa ya gak ada yang ngertiin aku?</p>
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <p class="text-white">Hai user, kenapa anda merasa seperti itu? memang menurut anda orang harus bersikap seperti apa untuk memahami anda? coba renungkan dan rasakan kembali diri anda.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-start-0 border-end-0" style="background-color: #0f0f10;">
+                          <h2 class="accordion-header" style="background-color: #0f0f10;">
+                            <button class="accordion-button collapsed" type="button" onclick="plusminus4()" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour" style="background-color: #0f0f10;">
+                              <img src="../assets/icon/plus.png" alt="..." style="width: 20px;" id="accordion-img4" class="mb-0">
+                              <p style="color: #ffffff;" class="fw-semibold ms-3 mb-1">Gejala utama bipolar apa sih? </p>
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <p class="text-white">Hai user, gejala utama bipolar adalah perubahan suasana hati(mood) yang drastis. Perubahan  mood ini biasanya terjadi dalam hitungan ja,hari atau bulan.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col text-end">
+                    <a href="index.html" class="btn btn-outline-warning px-4 py-2">Kembali ke beranda</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content end -->
+
+    <!-- footer start -->
+    <footer id="kontak" style="background-color: #F7F059;">
+        <div class="container">
+            <div class="row d-flex justify-content-center py-5">
+                <div class="col-md-3 col-sm-5 d-flex flex-column align-items-center">
+                    <img src="../assets/icon/logo3.png" alt="..." style="width: 100px;">
+                    <img src="../assets/icon/ayoCerita.png" alt="..." style="width: 200px;">
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Navigasi</h4>
+                    <a href="index.html" class="text-decoration-none text-black">
+                        <p>Halaman Utama</p>
+                    </a>
+                    <p>Layanan</p>
+                    <p>Sumber Informasi</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Tentang</h4>
+                    <p>Email</p>
+                    <p>Alamat</p>
+                    <p>Nomor Telepon</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Kontak</h4>
+                    <p>Karir</p>
+                    <p>Kebijakan Privasi</p>
+                    <p>Sumber Informasi</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3 d-flex flex-column align-items-center">
+                    <img src="../assets/icon/linkedIn.png" alt="..." style="width: 30px;" class="mt-1 mb-3">
+                    <img src="../assets/icon/ig.png" alt="..." style="width: 30px;" class="mb-3">
+                    <img src="../assets/icon/yt.png" alt="..." style="width: 30px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center text-dark">Hak Cipta &copy; 2023 Copyright Ayo Cerita!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+<script src="../js/bootstrap.bundle.js"></script>
+<script>
+    let accordionImg1 = document.getElementById('accordion-img1')
+    let accordionImg2 = document.getElementById('accordion-img2')
+    let accordionImg3 = document.getElementById('accordion-img3')
+    let accordionImg4 = document.getElementById('accordion-img4')
+
+    plusminus1 = () => {
+        if(accordionImg1.src.endsWith("plus.png")) {
+            accordionImg1.src = "../assets/icon/minus.png"
+        } else {
+            accordionImg1.src = "../assets/icon/plus.png"
+        }
+    }
+
+    function plusminus2() {
+        if(accordionImg2.src.endsWith("plus.png")) {
+            accordionImg2.src = "../assets/icon/minus.png"
+        } else {
+            accordionImg2.src = "../assets/icon/plus.png"
+        }
+    }
+
+    function plusminus3() {
+        if(accordionImg3.src.endsWith("plus.png")) {
+            accordionImg3.src = "../assets/icon/minus.png"
+        } else {
+            accordionImg3.src = "../assets/icon/plus.png"
+        }        
+    }
+
+    function plusminus4() {
+        if(accordionImg4.src.endsWith("plus.png")) {
+            accordionImg4.src = "../assets/icon/minus.png"
+        } else {
+            accordionImg4.src = "../assets/icon/plus.png"
+        }
+    }
+
+</script>
+</body>
+</html>

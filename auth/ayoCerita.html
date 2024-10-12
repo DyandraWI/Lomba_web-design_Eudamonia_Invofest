@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Cerita!</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/icon/logo2.png" type="image/x-icon">
+</head>
+<body style="background-color: #0f0f10;">
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top px-3" style="font-family: 'poppins'; background-color: #000000;">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img src="../assets/icon/logo.png" alt="..." style="width: 150px;">
+            </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="col d-flex">
+                <ul class="navbar-nav mx-auto gap-4 mt-2 mt-lg-0 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-current="page">Beranda<span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#layanan">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tentangKami">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#artikel">Artikel</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex my-2 my-lg-0">
+                <a href="../login.html" class="btn btn-outline-danger my-2 my-sm-0 px-4 fw-semibold" onclick="logout()">Keluar</a>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- content start -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-5 mt-3">
+                    <h1 class="fw-semibold text-white text-center">
+                        Gimana nih, ada yang mau ditanyakan dan diceritakan?
+                    </h1>
+                    <h5 class="fw-semibold text-center text-white">
+                        Tanya dan ceritakan dibawah sini yaa!!!
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-5 mt-4">
+                    <textarea class="form-control" rows="15" style="background-color: #D9D9D9; background-image: url('../assets/icon/logo6.png'); background-repeat: no-repeat; background-size: 200px; background-position: center;"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-5 mt-4 mb-5 text-end">
+                    <button type="button" class="btn fw-semibold px-4 py-2" style="background-color: #FFF640; color: #000000;"  data-bs-toggle="modal" data-bs-target="#exampleModal">Kirim</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content" style="background-color: #000000;">
+                                <div class="modal-header border-0">
+                                    <img src="../assets/icon/logo.png" alt="..." style="width: 150px;">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start text-white">
+                                    Apakah anda yakin akan mengirim cerita anda?
+                                </div>
+                                <div class="modal-footer border-0">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tidak</button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ya</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content" style="background-color: #000000;">
+                                <div class="modal-header border-0">
+                                    <img src="../assets/icon/logo.png" alt="..." style="width: 150px;">
+                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                </div>
+                                <div class="modal-body text-start text-white">
+                                    Terimakasih sudah bercerita di Ayo Cerita! Kami akan membantu menyelesaikan masalah Anda dengan cepat dan tepat
+                                </div>
+                                <div class="modal-footer border-0">
+                                    <a href="faq.html">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">OK!</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content end -->
+
+    <!-- footer start -->
+    <footer id="kontak" style="background-color: #F7F059;">
+        <div class="container">
+            <div class="row d-flex justify-content-center py-5">
+                <div class="col-md-3 col-sm-5 d-flex flex-column align-items-center">
+                    <img src="../assets/icon/logo3.png" alt="..." style="width: 100px;">
+                    <img src="../assets/icon/ayoCerita.png" alt="..." style="width: 200px;">
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Navigasi</h4>
+                    <a href="index.html" class="text-decoration-none text-black">
+                        <p>Halaman Utama</p>
+                    </a>
+                    <p>Layanan</p>
+                    <p>Sumber Informasi</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Tentang</h4>
+                    <p>Email</p>
+                    <p>Alamat</p>
+                    <p>Nomor Telepon</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3" style="line-height: 10px; color: #000000;">
+                    <h4 class="fw-bold mb-4">Kontak</h4>
+                    <p>Karir</p>
+                    <p>Kebijakan Privasi</p>
+                    <p>Sumber Informasi</p>
+                </div>
+                <div class="col-md-2 col-sm-5 mt-3 d-flex flex-column align-items-center">
+                    <img src="../assets/icon/linkedIn.png" alt="..." style="width: 30px;" class="mt-1 mb-3">
+                    <img src="../assets/icon/ig.png" alt="..." style="width: 30px;" class="mb-3">
+                    <img src="../assets/icon/yt.png" alt="..." style="width: 30px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center text-dark">Hak Cipta &copy; 2023 Copyright Ayo Cerita!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

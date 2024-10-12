@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question | Ayo Cerita!</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/icon/logo2.png" type="image/x-icon">
+</head>
+<body style="background-color: #0f0f10;">
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top px-3" style="font-family: 'poppins'; background-color: #000000;">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img src="../assets/icon/logo.png" alt="..." style="width: 150px;">
+            </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="col d-flex">
+                <ul class="navbar-nav mx-auto gap-4 mt-2 mt-lg-0 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-current="page">Beranda<span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#layanan">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentangKami">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#artikel">Artikel</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex my-2 my-lg-0">
+                <a href="../login.html" class="btn btn-outline-danger my-2 my-sm-0 px-4 fw-semibold" onclick="logout()">Keluar</a>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- question card start -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col mt-5">
+                <div class="card pb-4" style="border-radius: 50px;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col mt-3 d-flex justify-content-center">
+                                <h2 class="card-title pe-1 fw-bold">Halo,<h2 id="judul" class="fw-bold"></h2></h2>
+                            </div>
+                        </div>
+                        <p class="card-text fw-semibold fs-5 text-center mb-4">Gimana perasaaan kamu akhir akhir ini?</p>
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="px-5 py-4 col d-flex align-items-center justify-content-center bg-black gap-4" style="border-radius: 30px; max-width: fit-content;">
+                                <div class="row">
+                                    <div class="col-sm-3 my-1 text-center">
+                                        <a href="question2.html">
+                                            <img src="../assets/icon/lol.png" alt="..." style="width: 100px;">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3 my-1 text-center">
+                                        <a href="question2.html">
+                                            <img src="../assets/icon/neutral.png" alt="..." style="width: 100px;">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3 my-1 text-center">
+                                        <a href="question2.html">
+                                            <img src="../assets/icon/sad.png" alt="..." style="width: 100px;">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3 my-1 text-center">
+                                        <a href="question2.html">
+                                            <img src="../assets/icon/angry.png" alt="..." style="width: 100px;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- question card end -->
+    
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script>
+        let user = document.getElementById('judul')
+
+        user.innerHTML = localStorage.getItem('username')
+
+        logout = () => {
+            localStorage.removeItem('username')
+        }
+    </script>
+</body>
+</html>
